@@ -107,9 +107,4 @@ if node['redis']['source']['create_service']
     mode    "0644"
   end
 
-  service "redis" do
-    supports  :status => false, :restart => false, :reload => false
-    action    [:enable, :start]
-  end
-
 end
